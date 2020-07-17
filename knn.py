@@ -120,8 +120,8 @@ def test_with_real(data,test_filename):
 	print count_dict
 
 def main():
-	filename="preprocessed_kddcup_data"
-	data = pd.read_csv(filename)
+	filename="preprocessed_ARPPoison_data"
+	data = pd.arppoison_csv(filename)
 
 	with_full_features(data)
 	with_feature_selection(data)
