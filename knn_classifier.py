@@ -113,7 +113,7 @@ class knn:
 		size = len(test_data)
 		return self.test_some(test_data,test_label,size)
 
-data,label = read_data("preoprocessed_arppoison")
+data,label = read_data("preoprocessed_ARPPoison_data")
 print("File read successfully")
 train_x, train_y, test_x, test_y = train_test_split(data,label)
 print("Train and test sets created")
